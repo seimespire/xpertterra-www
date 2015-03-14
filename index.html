@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="main">
+  <head>
+ 	<meta charset="utf-8">
+	<meta name="description" content="Find and talk with an expert instantly">
+	<meta name="keywords" content="expert find talk">
+	<title>ЭXpertTerra - Find and talk with an expert instantly</title>
+	
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+	 
+    <script src="js/main.js"></script>
+    <script src="js/datalab.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="css/theme-1.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+	<!-- Themify Icons -->
+	<link rel="stylesheet" href="vendor/themify-icons/themify-icons.min.css">
+	
+
+</head>
+<body>
+
+   <div class="navbar navbar-static-top" role="navigation">
+      <!--<div class="container">-->
+	  <div class="navbar-header">
+
+         
+        <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+		<a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" ng-click="navbarCollapsed = !navbarCollapsed">
+			<span class="sr-only">Toggle navigation</span>
+			<i class="ti-view-grid"></i>
+		</a>
+      </div>
+		<div class="navbar-collapse collapse" collapse="navbarCollapsed" ng-init="navbarCollapsed = true" off-click="navbarCollapsed = true" off-click-if='!navbarCollapsed' off-click-filter="#menu-toggler">
+         <ul class="nav navbar-right" >
+			<li><a href="#/join"><i class="fa fa-users"></i> <span>Join</span></a></li>
+			<li><a href="#/login"><i class="fa fa-user"></i> <span>Login</span></a></li>
+          </ul>
+		</div>
+    </div>
+
+	<div id="maincontent" class="row">
+    <div class="container" ng-view>
+    </div> 
+    </div>
+	
+	<footer>
+		<div class="footer-inner">
+		<p><a href="#">Terms of service</a></p>
+		<p>&copy; 2015 xpertterra.com All rights reserved</p>
+		</div>
+	</footer>  
+</body>
+</html>

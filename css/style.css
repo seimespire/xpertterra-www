@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+
+@font-face {
+  font-family: 'fontello';
+  src: url('font/fontello.eot?50988478');
+  src: url('font/fontello.eot?50988478#iefix') format('embedded-opentype'),
+       url('font/fontello.woff?50988478') format('woff'),
+       url('font/fontello.ttf?50988478') format('truetype'),
+       url('font/fontello.svg?50988478#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body { background: #e9eaec; }
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+margin: 0;
+padding: 0;
+border: 0;
+font: inherit;
+font-size: 13px;
+vertical-align: baseline;
+	font-family: arial;
+
+}
+
+
+.cb {clear: both;}
+
+.navbar-header,
+.navbar .navbar-collapse { background: #1C2B36 !important; color: #ffffff !important; border: none !important; }
+
+.navbar .navbar-right > li > a { color: #ffffff !important; }
+.navbar-brand { height: auto !important; padding: 5px 20px !important; }
+#maincontent { padding: 80px 0; }
+
+footer {
+  border-top: 1px solid #c8c7cc;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  font-size: 12px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 1088;
+  height: 60px;
+   background-color: rgba(240,240,240,0.7);
+}
+footer .footer-inner {
+  padding: 10px 20px;
+  line-height: 20px;
+  text-align: center;
+ 
+}
+
+
